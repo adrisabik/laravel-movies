@@ -1,0 +1,51 @@
+
+.card{
+    width: 200px;
+}
+
+.carousel-caption{
+    width: 30%;
+}
+
+.input-group{
+    max-width: 60%;
+}
+
+.underline{
+    width: 300px;
+    height: 5px;
+    background-color: #0d6efd;
+    margin: 0 auto;
+}
+
+main{
+    min-height: 80vh;
+}
+
+footer{
+    bottom: 0;
+}
+
+.footer-text a{
+    color: #0d6efd;
+}
+
+@media(max-width: 1000px){
+    .card{
+        width: 150px;
+    }
+}
+
+@media(max-width: 576px){
+    .card{
+        width: 100px;
+    }
+}
+
+#editMovie{
+    margin-top: 60px;
+}
+
+.container-lg{
+    margin-top: 60px;
+}
