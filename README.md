@@ -2,13 +2,37 @@
 
 ## How to Use / Install
 
-### Requirement
+#### Requirement
  - PHP version >= 7.3.2
  - Composer
  - XAMPP/Laragon/Aplikasi untuk menjalankan server
  - MySQL 
  - Bootstrap 5
 
+#### Install lewat Composer
+ - Pertama cek apakah memenuhi requirement yang telah ada
+ - Jalankan Apache dan MySQL pada XAMPP
+ - Clone project ini
+ - Buka command prompt dan masuk ke direktori project dengan menggunakan cd
+ - Install composer dengan menggunakan
+   ```bash
+
+    composer install
+
+    ```
+ - Copy isi file .env.example ke .env
+ - Buka file .env lalu masukkan nama database (DB_NAME) sesuai nama database kamu, dan lakukan konfigurasi untuk username (DB_USERNAME) dan password (DB_PASSWORD).
+ - Pada command prompt jalankan
+   ```bash
+
+    php artisan key:generate
+    php artisan migrate
+    php artisan serve
+
+    ```
+  - Lalu masuk ke localhost:8000
+
+<hr>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
